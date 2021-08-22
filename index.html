@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="audio-container">
+      <div class="track-name">The name of the track</div>
+
+      <div class="audio"></div>
+
+      <div class="buttons">
+        <span class="play-btn btn">
+          <i class="fas fa-play"></i>
+          <i class="fas fa-pause"></i>
+        </span>
+
+        <span class="stop-btn btn">
+          <i class="fas fa-stop"></i>
+        </span>
+
+        <span class="mute-btn btn">
+          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-volume-mute"></i>
+        </span>
+
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.5"
+          class="volume-slider"
+        />
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

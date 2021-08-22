@@ -1,0 +1,61 @@
+.audio-container {
+  width: 600px;
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.audio-container .audio {
+  background: #222;
+  width: 100%;
+  height: 130px;
+}
+
+.audio-container .track-name {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 32px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.audio-container .btn {
+  padding: 16px;
+  width: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.audio-container .volume-slider {
+  width: 200px;
+}
+
+.audio-container .buttons .play-btn .fa-pause {
+  display: none;
+}
+
+.audio-container .buttons .play-btn.playing .fa-pause {
+  display: inline-block;
+}
+
+.audio-container .buttons .play-btn.play-btn.playing .fa-play {
+  display: none;
+}
+
+.audio-container .buttons .mute-btn .fa-volume-mute {
+  display: none;
+}
+
+.audio-container .buttons .mute-btn.muted .fa-volume-mute {
+  display: inline-block;
+}
+
+.audio-container .buttons .mute-btn.muted .fa-volume-up {
+  display: none;
+}
